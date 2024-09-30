@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Persone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+        <h1>Dati Persona</h1>
+        <form id="form" onsubmit="event.preventDefault(); addPerson();">
+            <label for="nome">Nome</label><br>
+            <input type="text" id="nome" placeholder="Nome" required><br>
+            <label for="cognome">Cognome</label><br>
+            <input type="text" id="cognome" placeholder="Cognome" required><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Email" required><br>
+            <label for="dataNascita">Data di Nascita</label><br>
+            <input type="date" id="dataNascita" required><br>
+            <label for="telefono">Telefono</label><br>
+            <input type="tel" id="telefono" placeholder="Numero di Telefono" required><br>
+            <label for="paese">Paese</label><br>
+            <input type="text" id="paese" placeholder="Paese" required><br>
+            <label for="provincia">Provincia</label><br>
+            <input type="text" id="provincia" placeholder="Provincia" required><br>
+            <button type="submit">Aggiungi Persona</button><br>
+        </form>
+        
+        <h2>Elenco Persone</h2>
+        <table id="tabellaPersone">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cognome</th>
+                    <th>Email</th>
+                    <th>Data di Nascita</th>
+                    <th>Telefono</th>
+                    <th>Paese</th>
+                    <th>Provincia</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

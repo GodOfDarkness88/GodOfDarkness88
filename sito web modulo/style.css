@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Stile per il contenitore principale */
+.container {
+    @apply mx-auto my-8 p-4 bg-gray-100 rounded-lg shadow-lg;
+}
+
+/* Stile per il modulo */
+form {
+    @apply space-y-4;
+}
+
+input {
+    @apply w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300;
+}
+
+/* Pulsante di invio */
+button[type="submit"] {
+    @apply bg-blue-500 text-white p-2 rounded transition duration-200;
+}
+
+button[type="submit"]:hover {
+    @apply bg-blue-600; /* Colore blu scuro al passaggio del mouse */
+}
+
+/* Stile per la tabella */
+table {
+    @apply w-full mt-4;
+    border-collapse: separate; /* Consente l'uso di border-spacing */
+    border-spacing: 10px; /* Margine tra le celle */
+    border: 2px solid gray; /* Bordo esterno di 2 pixel */
+}
+
+th, td {
+    @apply border-2 border-gray-300 p-2 text-left; /* Bordo di 2 pixel per le celle */
+}
+
+th {
+    @apply bg-blue-100; /* Colore di sfondo per le intestazioni */
+}
+
+/* Pulsante di rimozione */
+td button {
+    @apply bg-red-500 text-white rounded p-1 transition duration-200;
+}
+
+td button:hover {
+    @apply bg-blue-600; /* Colore blu scuro al passaggio del mouse */
+}
